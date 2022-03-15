@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <!--turkce karakter kullanmamı saglayacak.-->
+    <meta charset="utf-8">
+    <!--mobil icin gerekli olceklendirmeyi yapma.-->
+    <meta name="viewport" content="width=device-width,initial-schale=1.0">
+    <!--css baglantisi.-->
+    <link rel="stylesheet" type="text/css" href="matematikOyun.css">
+    <!--baslik.-->
+    <title> MATEMATİK OYUNU</title>
+</head>
+
+
+<body>
+    <!--buton olusturdum. basildiginda anasayfaya atacak.-->
+    <a href="giris.html"><button id="buton1"></button></a>
+    <!--buton olusturdum. basildiginda sayfayi yenileyecek .-->
+    <a href="matematikOyun.html"><button id="buton2"></button></a>
+
+    <!--oyun bolumu-->
+    <div id="oyun">
+        <!--baslik-->
+        <h1 >MATEMATİK 4 İŞLEM OYUNU</h1>
+        <!--ekranda js ile rastgele yazilacak sayilar ve operatorler.-->
+        <span id="sayi1">0</span>
+        <!--burada gecici olarak * koydum js ile degisecek.-->
+        <span id="operator">*</span>
+        <span id="sayi2">0</span>
+        <span>=</span>
+        <!--ekrana yazilacak sonuc bolumu.-->
+        <input type="text" id="sonuc">
+        <!--cevapla butonu-->
+        <input type="button" id="cevap" value="Cevapla">
+        <div style="clear: both"></div>
+        <!--
+            clear:both kullandim cunku clear:both kendisinden bir önceki float parametresini temizler.
+            clear both komutuna float temizleyici diyebiliriz.İcice div kullandigim icin kullandim.
+        -->
+
+        <!--dogru yanlis sayisinin gosterilecegi yer.-->
+        <div id="dogru">0</div>
+        <div id="yanlis">0</div>
+        <div style="clear: both"></div>
+
+    </div>
+
+    <!--js baglantisi.-->
+    <script src="matematikOyun.js"></script>
+
+</body>
+
+</html>

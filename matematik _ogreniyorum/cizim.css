@@ -1,0 +1,200 @@
+/*ana ekrani bicimlendirme*/
+body
+{
+    /*yuksekligi 100vh yaptim.*/
+    /*acilimi Viewport Height olan vh pencerenin yüksekliğini baz alir*/
+    /*1 vh tarayicinin penceresinin yuksekliginin yuzde 1'idir.*/
+    height: 100vh;
+    display: flex;
+    /*Boyutlari bilinmeyen dinamik alanlari daha kolay yonetmek icin kullanilir.*/
+    /*Sitedeki elemanlari yatay ve dikey de rahat bir sekilde duzenlemek ve hizalamak icin kullanilir.*/
+    justify-content: center;
+    /*justify-content yatay eksende hizalar. center ile birlikte ortali olarak hizalayacak*/
+    align-items: center;
+    /*icindeki elemanlari ortalayacak.*/
+}
+
+/*ana sayfaya gidecek buton bicimlendirmesi*/
+#btn
+{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: none;
+    /*uzerine gelindiginde imlec degisecek*/
+    cursor: pointer;
+    color: white;
+    outline: none;
+    background-color: coral;
+    padding: 14px 24px;
+    border-radius: 10px;
+    /*absolute oldugu icin cerceveye yani pencereye gore konumlanacak.*/
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    box-shadow: 0 4px black;
+    /*resim ekledim*/
+    background-image: url(ev_tusu.jpg);
+    /*resim tekrar etmiyecek tek resim olacak*/
+    background-repeat:no-repeat;
+    /*resmi merkezledim*/
+    background-position:center;
+    /*butona sigdirdim*/
+    background-size:100% 100%;
+    margin-right: 20px;
+}
+
+/*basilinca 3d goruntu*/
+#btn:active
+{
+    background-color: coral;
+    box-shadow: 0 3px coral;
+    transform: translateY(3px);
+}
+
+/*sayfayi yenileyecek butonun bicimlendirilmesi*/
+#btn1
+{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: none;
+    /*uzerine gelindiginde imlec degisecek*/
+    cursor: pointer;
+    color: white;
+    outline: none;
+    background-color: coral;
+    /*ust ve alttan 14px sag ve soldan 24px bosluk*/
+    padding: 14px 24px;
+    border-radius: 10px;
+    /*absolute oldugu icin cerceveye yani pencereye gore konumlanacak.*/
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    box-shadow: 0 4px black;
+    /*resim ekledim*/
+    background-image: url(refresh.jpg);
+    /*resim tekrar etmiyecek tek resim olacak*/
+    background-repeat:no-repeat;
+    /*resmi merkezledim*/
+    background-position:center;
+    /*butona sigdirdim*/
+    background-size:100% 100%;
+    margin-right: 20px;
+}
+
+/*basilinca 3d goruntu*/
+#btn1:active
+{
+    background-color: coral;
+    box-shadow: 0 3px coral;
+    transform: translateY(3px);
+}
+
+/*canvas'i bicimlendirme*/
+#canvas
+{ 
+    /*kenarlik koydum 1px duz cizgi ve siyah*/
+    border: 1px solid black;
+}
+
+/*class'in ismi genel olan div'i bicimlendirme*/
+.genel
+{
+    /*yuskelik 400px genislik 150px*/
+    width: 150px;
+    height: 400px;
+    /*kenarlik koydum 1px duz cizgi ve siyah*/
+    border: 1px solid black;
+    /*elementler arasi bosluk icin margin kullaniliyor. solundan 2rem bosluk alacak yani 32px.*/
+    margin-left: 2rem;
+}
+
+/*id ismi siyah olan div'i bicimlendirme*/
+#siyah
+{
+    /*genislik 50px yukseklik 50px*/
+    width: 50px;
+    height: 50px;
+    /*arkaplan rengi siyah*/
+    background-color: black;
+    /*kenarlik koydum 1px duz cizgi ve siyah*/
+    border: 1px solid black;
+    /*solundaki elementten 3rem yukaridan 10px bosluk alacak.*/
+    margin-left: 3rem;
+    margin-top: 10px;
+}
+
+/*id ismi sari olan div'i bicimlendirme*/
+#sari
+{
+    /*genislik 50px yukseklik 50px*/
+    width: 50px;
+    height: 50px;
+    /*arkaplan rengi sari*/
+    background-color: yellow;
+    /*kenarlik 1px duz cizgi ve siyah*/
+    border: 1px solid black;
+    /*solundaki elementten 3rem yukaridan 10px bosluk alacak.*/
+    margin-left: 3rem;
+    margin-top: 10px;
+}
+
+/*id ismi kirmizi olan div'i bicimlendirme*/
+#kirmizi
+{
+    /*genislik 50px yukseklik 50px*/
+    width: 50px;
+    height: 50px;
+    /*arkaplan rengi kirmizi*/
+    background-color: red;
+    /*kenarlik 1px duz cizgi ve siyah*/
+    border: 1px solid black;
+    /*solundaki elementten 3rem yukaridan 10px bosluk alacak.*/
+    margin-left: 3rem;
+    margin-top: 10px;
+}
+
+/*id ismi mavi olan div'i bicimlendirme*/
+#mavi
+{
+    /*genislik 50px yukseklik 50px*/
+    width: 50px;
+    height: 50px;
+    /*arkaplan rengi mavi*/
+    background-color: blue;
+    /*kenarlik 1px duz cizgi ve siyah*/
+    border: 1px solid black;
+    /*solundaki elementten 3rem yukaridan 10px bosluk alacak.*/
+    margin-left: 3rem;
+    margin-top: 10px;
+}
+
+/*id ismi yesil olan div'i bicimlendirme*/
+#yesil
+{
+    /*genislik 50px yukseklik 50px*/
+    width: 50px;
+    height: 50px;
+    /*arkaplan rengi yesil*/
+    background-color: green;
+    /*kenarlik 1px duz cizgi ve siyah*/
+    border: 1px solid black;
+    /*solundaki elementten 3rem yukaridan 10px bosluk alacak.*/
+    margin-left: 3rem;
+    margin-top: 10px;
+
+}
+
+/*id ismi silgi olan div'i bicimlendirme*/
+#silgi
+{
+    /*genislik 50px yukseklik 50px*/
+    width: 50px;
+    height: 50px;
+    /*kenarlik 1px duz cizgi ve siyah*/
+    border: 1px solid black;
+    /*solundaki elementten 3rem yukaridan 10px bosluk alacak.*/
+    margin-left: 3rem;
+    margin-top: 10px;  
+}

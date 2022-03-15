@@ -1,0 +1,117 @@
+/*baslangic degerleri.*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: tan;
+}
+
+/*id adi btn olan yeri bicimlendirme*/
+#btn
+{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: none;
+    /*uzerine gelindiginde imlec degisecek*/
+    cursor: pointer;
+    color: white;
+    outline: none;
+    background-color: coral;
+    /*ust ve alttan 14px sag ve soldan 24px bosluk*/
+    padding: 14px 24px;
+    border-radius: 10px;
+    /*golgelendirme*/
+    box-shadow: 0 2px black;
+    /*resim ekledim*/
+    background-image: url(ev_tusu.jpg);
+    /*resim tekrar etmiyecek tek resim olacak*/
+    background-repeat:no-repeat;
+    /*resmi merkezledim*/
+    background-position:center;
+    /*butona sigdirdim*/
+    background-size:100% 100%;
+    margin-left: 10px;
+}
+
+/*basildiginda 3d efekt alacak*/
+#btn:active
+{
+    background-color: coral;
+    box-shadow: 0 3px black;
+    transform: translateY(3px);
+}
+
+/*basligi bicimlendirdim.*/
+h1
+{
+    background-color: cadetblue;
+    color: red;
+    text-align: center;
+}
+
+/*class adi anaEkran olan div'i bicimlendirdim.*/
+.anaEkran 
+{
+   width: 80em;
+   height: 30em;
+   margin: 30px 50px;
+   background-color:peachpuff;
+   border: 1px solid black;
+}
+
+/*id adi toplamabuton olan yeri bicimlendirme*/
+#toplamabuton
+{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    cursor: pointer;
+    /*butonun ustune gelinince imlec degisecek.*/
+    text-align: center;
+    /* butondaki yaziyi merkezledim.*/
+    /*usten %12 ve soldan %35 bosluk aldim. */
+    margin-top: 12%;
+    margin-left:35%;
+}
+
+/*id adi cikarmabuton olan yeri bicimlendirme*/
+#cikarmabuton
+{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    cursor: pointer;
+    /*butonun ustune gelinince imlec degisecek.*/
+    text-align: center;
+    /* butondaki yaziyi merkezledim.*/
+}
+
+/*id adi bolmebuton olan yeri bicimlendirme*/
+#bolmebuton
+{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    cursor: pointer;
+    /*butonun ustune gelinince imlec degisecek.*/
+    text-align: center;
+    /* butondaki yaziyi merkezledim.*/
+}
+
+/*id adi carpmabuton olan yeri bicimlendirme*/
+#carpmabuton
+{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    cursor: pointer;
+    /*butonun ustune gelinince imlec degisecek.*/
+    text-align: center;
+   /* butondaki yaziyi merkezledim.*/
+}

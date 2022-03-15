@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <!--turkce karakter kullanmamı saglayacak.-->
+    <meta charset="utf-8">
+    <!--mobil icin gerekli olceklendirmeyi yapma.-->
+    <meta name="viewport" content="width=device-width,initial-schale=1.0">
+    <!--css baglantisi-->
+    <link rel="stylesheet" type="text/css" href="tahminEt.css">
+    <!--baslik-->
+    <title>Sayi Tahmin Et</title>
+</head>
+<body>
+
+        
+    <header>
+        <!--h1 seviyesinde baslik-->
+        <h1>Sayi Tahmin Et</h1>
+        <!--1-20 Arasi Sayi Giriniz. yazisi yazan paragraf-->
+        <p class="arasi">(1-20) Arası Sayı Giriniz</p>
+        <!--ana sayfaya yonlendiren buton-->
+        <a href="giris.html"><button id="btn2"></button></a>
+        <!--Tekrar baslatma butonu-->
+        <button class="btn">Tekrar Başlat</button>
+        <!--? isareti goruntu amacli ,js ile dogru tahmin edilirse random tutulan sayi yazacak.-->
+        <div class="sayi">?</div>
+    </header>
+    <main>
+        <section class="sol">
+            <!--sayi girilebilecek bir input -->
+            <input class="tahmin" type="number">
+            <!--kontrol et butonu-->
+            <button class="btn1">KONTROL ET</button>
+        </section>
+        <section class="sag">
+            <!--tahmin et yazdirdim. js ile yaklasik durumu yazacak.cok dusuk yuksek gibi-->
+            <p class="mesaj">Tahmin Et </p>
+            <!--skorun yazacagi yer-->
+            <p class="skor">Skor:20</p>
+            <!--en yuksek skorun yazacagi yer-->
+            <p class="yuksek">En yuksek skor:0</p> 
+        </section>
+    </main>
+    
+    <!--js baglantisi-->
+    <script src="tahminEt.js"></script>
+</body>
+</html>

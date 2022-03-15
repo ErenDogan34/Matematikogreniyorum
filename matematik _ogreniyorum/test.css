@@ -1,0 +1,134 @@
+/*ana ekrani bicimlendirme*/
+body
+{
+    background-color:violet;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 1em;
+}
+
+/*h1 seviyesinde baslik bicimlendirme*/
+h1
+{
+    /*icindeki yaziyi ortalayacak.*/
+    text-align: center;
+    /*rengi kirmizi olacak.*/
+    color:red;
+}
+
+/*div alanlarini bicimlendirme*/
+div
+{
+    /*yukseklik ve genislik otomatik olacak.*/
+    width: auto;
+    height: auto;
+    /*kenarlik duz 1px ve siyah olacak.*/
+    border: 1px solid black;
+    /*kendi icinin solundan 2em'lik bosluk.*/
+    padding-left: 2em;
+}
+
+/*id ismi buton olan alani bicimlendirme*/
+#buton
+{
+    /*genislik %100 olacak yukseklik 50px olacak.*/
+    width:100%;
+    height: 50px;
+    /*arkapla rengi coral olacak*/
+    background-color:coral;
+    /*buton oldugundan ustune gelindiginde imlec degisecek*/
+    cursor: pointer;
+    /*disaridan 2em'lik bosluk*/
+    margin-top: 2em;
+}
+
+/*uzerine gelindiginde renk degisecek*/
+#buton:hover
+{
+    background-color:springgreen;
+}
+
+/*id ismi btn1 olan kismin bicimlendirilmesi*/
+#btn1
+{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    /*imlec uzerine geldiginde degisecek.*/
+    color: white;
+    outline: none;
+    background-color: coral;
+    padding: 14px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px black;
+    /*resim ekledim*/
+    background: url(ev_tusu.jpg);
+    /*resim tekrar etmiyecek tek resim olacak*/
+    background-repeat:no-repeat;
+    /*resmi merkezledim*/
+    background-position:center;
+    /*butona sigdirdim*/
+    background-size:100% 100%;
+    margin-bottom: 20px;
+}
+
+/*basilinca 3d efekt*/
+#btn1:active
+{
+    background-color: coral;
+    box-shadow: 0 3px coral;
+    transform: translateY(3px);
+}
+
+/*id ismi btn2 olan kismin bicimlendirilmesi*/
+#btn2
+{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    /*imlec uzerine geldiginde degisecek.*/
+    color: white;
+    outline: none;
+    background-color: coral;
+    padding: 14px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px black;
+    /*resim ekledim*/
+    background: url(refresh.jpg);
+    /*resim tekrar etmiyecek tek resim olacak*/
+    background-repeat:no-repeat;
+    /*resmi merkezledim*/
+    background-position:center;
+    /*butona sigdirdim*/
+    background-size:100% 100%;
+    margin-bottom: 20px;
+}
+
+/*basilinca 3d efekt*/
+#btn2:active
+{
+    background-color: coral;
+    box-shadow: 0 3px coral;
+    transform: translateY(3px);
+}
+
+/*id ismi git olan alani bicimlendirme*/
+#git
+{
+    /*yukseklik ve genislik otomatik olacak.*/
+    width:auto;
+    height: auto;
+    /*arkaplan rengi coral olacak*/
+    background-color:coral;
+    /*buton oldugundan ustune gelindiginde imlec degisecek*/
+    cursor: pointer;
+    /*disaridan 2em'lik bosluk*/
+    margin-top: 2em;
+    display: none;
+    /*gorunurlugu kapattim.*/
+}

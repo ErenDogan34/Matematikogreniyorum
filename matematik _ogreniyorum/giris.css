@@ -1,0 +1,213 @@
+body{
+    background-color:darkslategrey;
+}
+
+/*id adi resim olan yeri bicimlendirme*/
+#resim
+{
+   position: absolute;
+   top: 16em;
+   left: 55em;
+ 
+}
+
+/*class adi box olan yeri bicimlendirme*/
+.box{
+    margin-top: 4em;
+    text-align: center;
+    background-image: url(baslik.jpg);
+}
+
+/*bilgi sayfasina gidecek buton bicimlendirmesi*/
+#btn1{
+    width: 300px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    /*cursor:pointer uzerine geldiginde imlec degisecek. */
+    color: white;
+    outline: none;
+    background-color: coral;
+    padding: 14px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px black;
+    /*golgelendirme*/  
+    position: absolute;
+    /*position:absolute kulllandim. dogrudan web sayfasina gore konumlanacak*/
+    top: 20em;
+    /*yukaridan 20em'lik bosluk aldim.diger hicbir butonu etkilemeden kayacak.*/
+    left: 1em;
+    /*soldan 1em'lik bosluk aldim.*/
+}
+
+/*uzerine gelindiginde renk degistirecek.*/
+#btn1:hover {
+    background-color:cornflowerblue;
+}
+
+/*3d efekt*/
+#btn1:active{
+    background-color: coral;
+    box-shadow: 0 3px black;
+    transform: translateY(3px);
+}
+
+/*hesap makinesi sayfasina gidecek buton bicimlendirmesi*/
+#btn2{
+    width: 300px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    background-color: coral;
+    padding: 14px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px black;
+    position: absolute;
+    /*position:absolute kulllandim. dogrudan web sayfasina gore konumlanacak*/
+    top: 28em;
+    /*yukaridan 28em'lik bosluk aldim.diger hicbir butonu etkilemeden kayacak.*/
+    left: 1em;
+    /*soldan 1em'lik bosluk aldim.*/
+
+}
+
+/*uzerine gelindiginde renk degistirecek.*/
+#btn2:hover {
+    background-color:cornflowerblue;
+}
+/*3d efekt*/
+#btn2:active{
+    background-color: coral;
+    box-shadow: 0 3px black;
+    transform: translateY(3px);
+}
+
+/*matematik oyunu sayfasina gidecek buton bicimlendirmesi*/
+#btn3{
+    width: 300px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    background-color: coral;
+    padding: 14px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px black;
+    position: absolute;
+    /*position:absolute kulllandim. dogrudan web sayfasina gore konumlanacak*/
+    top: 20em;
+     /*yukaridan 20em'lik bosluk aldim.diger hicbir butonu etkilemeden kayacak.*/
+    left: 30em;
+    /*soldan 30em'lik bosluk aldim.*/
+}
+
+/*uzerine gelindiginde renk degistirecek.*/
+#btn3:hover {
+    background-color:cornflowerblue;
+}
+
+/*3d efekt*/
+#btn3:active{
+    background-color: coral;
+    box-shadow: 0 3px black;
+    transform: translateY(3px);
+}
+
+/*tahmin oyunu sayfasina gidecek buton bicimlendirmesi*/
+#btn4{
+    width: 300px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    background-color: coral;
+    padding: 14px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px black;
+    position: absolute;
+     /*position:absolute kulllandim. dogrudan web sayfasina gore konumlanacak*/
+    top: 36em;
+    /*yukaridan 36em'lik bosluk aldim.diger hicbir butonu etkilemeden kayacak.*/
+    left: 1em;
+    /*soldan 1em'lik bosluk aldim.*/
+}
+
+/*uzerine gelindiginde renk degistirecek.*/
+#btn4:hover {
+    background-color:cornflowerblue;
+}
+
+/*3d efekt*/
+#btn4:active{
+    background-color: coral;
+    box-shadow: 0 3px black;
+    transform: translateY(3px);
+}
+
+/*test sayfasina gidecek buton bicimlendirmesi*/
+#btn5{
+    width: 300px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    background-color: coral;
+    padding: 14px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px black;
+    position: absolute;
+    /*position:absolute kulllandim. dogrudan web sayfasina gore konumlanacak*/
+    top: 28em;
+    /*yukaridan 28em'lik bosluk aldim.diger hicbir butonu etkilemeden kayacak.*/
+    left: 30em;
+    /*soldan 30em'lik bosluk aldim.*/
+}
+
+/*uzerine gelindiginde renk degistirecek.*/
+#btn5:hover {
+    background-color:cornflowerblue;
+}
+
+/*3d efekt*/
+#btn5:active{
+    background-color: coral;
+    box-shadow: 0 3px black;
+    transform: translateY(3px);
+}
+
+/*cizim sayfasina gidecek buton bicimlendirmesi*/
+#btn6{
+    width: 300px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    background-color: coral;
+    padding: 14px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px black;
+    position: absolute;
+    /*position:absolute kulllandim. dogrudan web sayfasina gore konumlanacak*/
+    top: 36em;
+    /*yukaridan 36em'lik bosluk aldim.diger hicbir butonu etkilemeden kayacak.*/
+    left: 30em;
+    /*soldan 30em'lik bosluk aldim.*/
+}
+
+/*uzerine gelindiginde renk degistirecek.*/
+#btn6:hover {
+    background-color:cornflowerblue;
+}
+
+/*3d efekt*/
+#btn6:active{
+    background-color: coral;
+    box-shadow: 0 3px black;
+    transform: translateY(3px);
+}

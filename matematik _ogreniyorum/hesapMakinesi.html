@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <!--turkce karakter kullanmamı saglayacak.-->
+    <meta charset="utf-8">
+    <!--mobil icin gerekli olceklendirmeyi yapma.-->
+    <meta name="viewport" content="width=device-width,initial-schale=1.0">
+    <!--css baglantisi-->
+    <link rel="stylesheet" type="text/css" href="hesapMakinesi.css">
+    <!--baslik-->
+    <title>HESAP MAKİNESİ</title>
+</head>
+<body>
+    <div>
+        <!--anasayfaya yonlendiren buton.-->
+        <a href="giris.html"><button id="btn"></button></a>
+        <!--sayfayi yenileyecek buton.-->
+        <a href="hesapMakinesi.html"><button id="btn1"></button></a>
+    <!--class adi container olan div -->
+    <div class="container">
+        <!--hesap makinesindeki sayilar ve bazi . ,= gibi isaretler -->
+        <div>
+            <!--hesaplanmasi istenilen sayiyi ve operatoru yazacagimiz yer.-->
+            <input type="text">
+            <!--onclick olayi olusturdum.butonlara basildiginda tanimlanan fonksiyonlar calisicak-->
+            <button onclick="sayi9(); etkinlestirme()">9</button>
+            <button onclick="sayi8(); etkinlestirme()">8</button>
+            <button onclick="sayi7(); etkinlestirme()">7</button>
+            <button onclick="sayi6(); etkinlestirme()">6</button>
+            <button onclick="sayi5(); etkinlestirme()">5</button>
+            <button onclick="sayi4(); etkinlestirme()">4</button>
+            <button onclick="sayi3(); etkinlestirme()">3</button>
+            <button onclick="sayi2(); etkinlestirme()">2</button>
+            <button onclick="sayi1(); etkinlestirme()">1</button>
+            <button id="operator6" onclick="nokta(); operatorler()">.</button>
+            <button onclick="sayi0(); etkinlestirme()">0</button>
+            <button id="operator5" onclick="hesaplama()"; ">=</button>
+        </div>
+         <!--hesap makinesindeki operatorler ve silme tusu -->
+        <div>
+            <button onclick="silme();">C</button>
+            <button id="operator1" onclick="arti(); operatorler()">&plus;</button>
+            <button id="operator2" onclick="eksi(); operatorler()">&minus;</button>
+            <button id="operator3" onclick="carpma(); operatorler()">&times;</button>
+            <button id="operator4" onclick="bolme(); operatorler()">&div;</button>
+        </div>
+    </div>
+</div>
+
+    <!--js baglantisi-->
+    <script src="hesapMakinesi.js"></script>
+
+</body>
+</html>

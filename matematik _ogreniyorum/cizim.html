@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <!--turkce karakter kullanmamı saglayacak.-->
+        <meta charset="utf-8">
+        <!--mobil icin gerekli olceklendirmeyi yapma.-->
+        <meta name="viewport" content="width=device-width,initial-schale=1.0">
+        <!--css baglantisi-->
+        <link rel="stylesheet" type="text/css" href="cizim.css">
+        <!--baslik-->
+        <title>ÇİZİM</title>
+
+    </head>
+    <body>
+        <!--anasayfaya yonlendiren buton.-->
+        <a href="giris.html"><button id="btn"></button></a>
+         <!--sayfayi yenileyecek buton.-->
+        <a href="cizim.html"><button id="btn1"></button></a>
+        <!--canvas sayesinde 2d ve grafik cizimi yapilabiliyor.ben 2d cizim yaptim-->
+        <!--id ismi canvas ;genisligi ve yuksekligi 600 olan bir canvas olusturdum.-->
+        <canvas id="canvas" width="600" height="600"></canvas>
+
+
+        <!--renk ve silgi icericek div'ler-->
+        <div class="genel">
+            <div id="siyah"></div>
+            <div id="sari"></div>
+            <div id="kirmizi"></div>
+            <div id="mavi"></div>
+            <div id="yesil"></div>
+            <div id="silgi"></div>
+        </div>
+
+        <!--js baglantisi-->
+        <script src="cizim.js"></script>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/*ana ekrani bicimlendirme*/
+body{
+    /*yuksekligi 100vh yaptim*/
+    height: 100vh;
+    /*ekran boyutuna gore duzenini ayarlar*/
+    display: flex;
+    /*merkezleme*/
+    align-items: center;
+    /*nesneleri tam ortali olacak sekilde hizalar.*/
+    justify-content: center;
+    /*arkaplan rengi*/
+    background: #1d1c1c;
+}
+
+/*class ismi container olan alani bicimlendirme*/
+.container
+{
+    /*ekran boyutuna gore duzenini ayarlar*/
+    display: flex;
+    /*elementin sahip oldugu pozisyondan baslayacagi sekilde konumlandirma*/
+    position: relative;
+    /*genislik ve yukseklik belirleme*/
+    width: 300px;
+    height: 330px;
+    /*ic bosluk ayarlama*/
+    padding: 30px;
+    /*arkaplan rengi*/
+    background: #1d1c1c;
+    /*yuvarlaklik saglama*/
+    border-radius: 20px;
+    /*golgelendirme*/
+    box-shadow: 2px 1px 8px rgba(255, 255, 255, .03),inset 1px 2px 10px rgba(255,255,255,.05);
+}
+
+/*class ismi container olan alanin icindeki inputlari bicimlendirme*/
+.container input
+{
+    /*distan bosluk alma*/
+    margin: 6px 8px;
+    /*genislik ve yukseklik belirleme*/
+    width: 165px;
+    height: 42px;
+    /*yazi tipi kalinlilgi 40px olacak*/
+    line-height: 40px;
+    /*ic soldan bosluk alma*/
+    padding-left: 12px;
+    /*yazi boyutu 18px olacak*/
+    font-size: 18px;
+    /*renk ayari*/
+    color: rgb(239, 79, 13);
+    /*harfler arasindaki bosluk 1px olacak.*/
+    letter-spacing: 1px;
+    /*renginde hafif sefaflik veriyor.*/
+    background: transparent;
+    /*yuvarlamayi 5px olarak yaptim.*/
+    border-radius: 5px;
+    /*kenarlik 1px duz cizgi ve siyah olacak*/
+    border:1px solid black;
+}
+
+/*class ismi container olan alanin icindeki butonlari bicimlendirme*/
+.container button
+{
+    /*imlac uzerine gelince degisecek*/
+    cursor: pointer;
+    /*saat yonunun tersine isler yani 7px ust 7px sol*/
+    margin: 7px 7px;
+    /*genislik ve yukseklik belirleme*/
+    width: 42px;
+    height: 42px;
+    /*yazi boyutu 18px olacak*/
+    font-size: 18px;
+    /*renginde hafif sefaflik veriyor.*/
+    background: transparent;
+    /*renk ayari*/
+    color: cornflowerblue;
+    /*yuvarlamayi 5px olarak yaptim.*/
+    border-radius: 5px;
+    /*kenarlik 1px duz cizgi ve siyah olacak*/
+    border :1px solid black;
+    transition: all .2s;
+    /*2 saniyelik animasyon olusturdum.*/
+}
+
+/*buton uzerine gelince renk degistirecek.*/
+.container button:hover{
+    columns: #1d1c1c;
+    background-color:coral;
+}
+
+/*ana sayfaya gidecek butonun bicimlendirilmesi*/
+#btn
+{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: none;
+    /*uzerine gelindiginde imlec degistirecek*/
+    cursor: pointer;
+    color: white;
+    outline: none;
+    background-color: coral;
+    /*kendi icinde padding ile 14px ust ve alt  24 px sol ve sag basluk alacak*/
+    padding: 14px 24px;
+    /*koseleri yuvarlama*/
+    border-radius: 10px;
+    /*absolute oldugu icin cerceveye yani pencereye gore konumlanacak.*/
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    box-shadow: 0 4px black;
+    /*resim ekledim*/
+    background-image: url(ev_tusu.jpg);
+    /*resim tekrar etmiyecek tek resim olacak*/
+    background-repeat:no-repeat;
+    /*resmi merkezledim*/
+    background-position:center;
+    /*butona sigdirdim*/
+    background-size:100% 100%;
+    margin-right: 20px;
+}
+
+/*basilinca 3d efekt*/
+#btn:active
+{
+    background-color: coral;
+    box-shadow: 0 3px coral;
+    transform: translateY(3px);
+}
+
+/*sayfayi yenileyecek butonun bicimlendirilmesi*/
+#btn1
+{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: none;
+    /*uzerine gelindiginde imlec degistirecek*/
+    cursor: pointer;
+    color: white;
+    outline: none;
+    background-color: coral;
+    /*kendi icinde padding ile 14px ust ve alt  24 px sol ve sag basluk alacak*/
+    padding: 14px 24px;
+    /*koseleri yuvarlama*/
+    border-radius: 10px;
+    /*absolute oldugu icin cerceveye yani pencereye gore konumlanacak.*/
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    box-shadow: 0 4px black;
+    /*resim ekledim*/
+    background-image: url(refresh.jpg);
+    /*resim tekrar etmiyecek tek resim olacak*/
+    background-repeat:no-repeat;
+    /*resmi merkezledim*/
+    background-position:center;
+    /*butona sigdirdim*/
+    background-size:100% 100%;
+    margin-right: 20px;
+}
+
+/*basilinca 3d efekt*/
+#btn1:active
+{
+    background-color: coral;
+    box-shadow: 0 3px coral;
+    transform: translateY(3px);
+}

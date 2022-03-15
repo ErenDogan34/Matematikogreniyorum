@@ -1,0 +1,144 @@
+/*ana govde bicimlendirmesi*/
+body{
+    /*arka plan rengi*/
+    background-color:darkseagreen;
+}
+
+/*id'si oyun olan div'in bicimlendirilmesi.*/
+#oyun{
+    background-color:fuchsia;
+    width: 35em;
+    /*1em 16px'e denk geliyor.yani benim kullandigim 560px*/
+    padding: 2px;
+    /*kendi icinde bosluk aliyor*/
+    text-align: center;
+    /*icindeki metinleri ortaladim*/
+    margin: auto;
+}
+
+/*h1 seviyesinde baslik bicimlendirmesi.*/
+h1{
+    margin: 5px 0 18px 0;
+    /* margin saat yonunde usten baslayarak kodlanir. 5px ustten ,0 sag,18px asagi,0 sol olur.*/
+    border: 2px solid black;
+    /*kenar cizgisi 2px'lik siyah duz olacak.*/
+    padding: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    /*font-family yazi tipini belirliyor.*/
+
+}
+
+/*span bicimlendirmesi*/
+span{
+    font-size: 125%;
+    padding: 12px;
+}
+
+/*sonuc bolumu bicimlendirme.*/
+#sonuc{
+    /*genislik 75px olacak.*/
+    width: 75px;
+    /*sag tarafindan 20px bosluk alacak.*/
+    margin-right: 20px;
+}
+
+/*cevap bolumunu bicimlendirme*/
+#cevap{
+    margin-top: 10px;
+    padding: 5px;
+    border: solid 2px black;
+    width: 100px;
+    background-color: coral;
+    color:black; 
+}
+
+/*ustune geldiginde renk degisecek*/
+#cevap:hover{
+    background-color:chocolate;  
+}
+
+/*dogru sayisnin yazilacagi yerin bicimlendirilmesi.*/
+#dogru{
+    font-size: 150%;
+    margin-top:10px;
+    padding:10px;
+    display: inline-block;
+    background-color: green;
+}
+
+/*yanlis sayisnin yazilacagi yerin bicimlendirilmesi.*/
+#yanlis{
+    font-size: 150%;
+    margin-top:10px;
+    padding:10px;
+    display: inline-block;
+    background-color: red;
+    /*inline-block sayesinde yanyana durabilecekler*/
+}
+
+/*id ismi buton1 olan yeri bicimlendirme.*/
+#buton1{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    /*imlec uzerine geldiginde degisecek.*/
+    color: white;
+    outline: none;
+    background-color: coral;
+    padding: 14px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px black;
+    /*resim ekledim*/
+    background-image: url(ev_tusu.jpg);
+    /*resim tekrar etmiyecek tek resim olacak*/
+    background-repeat:no-repeat;
+    /*resmi merkezledim*/
+    background-position:center;
+    /*butona sigdirdim*/
+    background-size:100% 100%;
+    margin-right: 20px;
+    
+}
+
+/*basilinca 3d efekt*/
+#buton1:active{
+    background-color: coral;
+    box-shadow: 0 3px black;
+    transform: translateY(3px);
+}
+
+/*id ismi buton2 olan yeri bicimlendirme.*/
+#buton2
+{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    /*imlec uzerine geldiginde degisecek.*/
+    color: white;
+    outline: none;
+    background-color: coral;
+    padding: 14px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px black;
+    /*resim ekledim*/
+    background-image: url(refresh.jpg);
+    /*resim tekrar etmiyecek tek resim olacak*/
+    background-repeat:no-repeat;
+    /*resmi merkezledim*/
+    background-position:center;
+    /*butona sigdirdim*/
+    background-size:100% 100%;
+    margin-right: 20px;
+}
+
+/*basilinca 3d efekt*/
+#buton2:active
+{
+    background-color: coral;
+    box-shadow: 0 3px black;
+    transform: translateY(3px);
+}

@@ -1,0 +1,205 @@
+/*sayfayi bicimlendirme*/
+html{
+    font-size: 62.5%;
+}
+/*genel bicimlendirme*/
+body
+{
+    /*yazi sekli*/
+    font-family: 'Times New Roman', Times, serif;
+    /*yazi rengi*/
+    color: white;
+    /*arka plan rengi*/
+    background-color: teal;
+}
+
+/*h1 seviyesinde baslik bicimlendirme.*/
+h1{
+    /*yazi boyu*/
+    font-size: 5rem;
+    /*yaziyi merkeze cektim*/
+    text-align: center;
+    /*position: absolute ile yanindaki div'e gore degilde kenarlara gore hizaladim*/
+    position: absolute;
+    /*genel olarak nasil duracagini bicimlendirme*/
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*ana sayfaya yonlendiren butonun bicimlendirilmesi.*/
+#btn2
+{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: none;
+    /*uzerine gelindiginde imlec degisecek*/
+    cursor: pointer;
+    color: white;
+    outline: none;
+    background-color: coral;
+    /*ust ve alttan 14px sag ve soldan 24px bosluk*/
+    padding: 14px 24px;
+    border-radius: 10px;
+    /*absolute oldugu icin cerceveye yani pencereye gore konumlanacak.*/
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    box-shadow: 0 4px black;
+    /*resim ekledim*/
+    background-image: url(ev_tusu.jpg);
+    /*resim tekrar etmiyecek tek resim olacak*/
+    background-repeat:no-repeat;
+    /*resmi merkezledim*/
+    background-position:center;
+    /*butona sigdirdim*/
+    background-size:100% 100%;
+    margin-right: 20px;
+}
+
+/*basilinca 3d efekt*/
+#btn2:active
+{
+    background-color: coral;
+    box-shadow: 0 3px coral;
+    transform: translateY(3px);
+}
+
+/*header kismini bicimlendirme*/
+header
+{
+    position: relative;
+    height: 35vh;
+    border-bottom: 3px solid aliceblue;
+
+}
+
+/*yuksekligin yuzde 35'ini header 65'ini main kullaniyor.*/
+main
+{
+    height: 65vh;
+    color: aliceblue;
+    display: flex;
+    /*hizalanmasini sagladim*/
+    align-items: center;
+    /*ortalar*/
+    justify-content: space-around;
+
+}
+
+/*sol isimli class'in bicimlendirilmesi*/
+.sol
+{
+    width: 52rem;
+    display: flex;
+    flex-direction: column;
+    /*kolonu dolduracak sekilde alt alta getirdim.*/
+    align-items: center;
+}
+
+/*sag isimli class'in bicimlendirilmesi*/
+.sag
+{
+    width: 52rem;
+    font-size: 2rem;
+}
+
+/*arasi isimli class'in bicimlendirilmesi*/
+.arasi
+{
+    font-size: 1.5rem;
+    position: absolute;
+    /*çerceveye göre konumlanacak*/
+    top: 2rem;
+    right: 2rem;
+}
+
+/*btn isimli class'in bicimlendirilmesi*/
+.btn
+{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: none;
+    background-color: coral;
+    position: absolute;
+    /*çerceveye göre konumlanacak*/
+    top: 140px;
+    left: 2rem;
+    cursor: pointer;
+    /*imlec degistirme*/
+    box-shadow: 0 4px black;
+    /*3d efekt icin golgelendirme*/
+}
+
+/*basilinca 3d efekt*/
+.btn:active
+{
+    background-color: coral;
+    box-shadow: 0 3px coral;
+    transform: translateY(3px);
+}
+
+/*sayi isimli class'in bicimlendirilmesi*/
+ .sayi
+ {
+     background-color: aliceblue;
+     color: brown;
+     font-size: 6rem;
+     width: 15rem;
+     padding: 2rem 0rem;
+     text-align: center;
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     transform: translate(-50%,50%);
+ }
+
+ /*tahmin isimli class'in bicimlendirilmesi*/
+ .tahmin
+ {
+     background: none;
+     color: inherit;
+     /*kalitim yaptim kendinin ustundekinden rengi alacak*/
+     border: 4px solid white;
+     font-family: inherit;
+     font-size: 5rem;
+     padding: 2.5rem;
+     width: 25rem;
+     text-align: center;
+     display: block;
+     margin-bottom:3rem;
+ }
+
+ /*btn1 isimli class'in bicimlendirilmesi*/
+ .btn1
+ {
+     border: none;
+     background-color: white;
+     color: brown;
+     font-size: 2rem;
+     padding: 2rem 3rem ;
+     cursor: pointer;
+     /*imlec degistirme*/
+ }
+
+ /*ustune gelinince renk degistirecek.*/
+ .btn1:hover{
+     background-color: aquamarine;
+ }
+
+ /*mesaj isimli class'in bicimlendirilmesi.*/
+ .mesaj
+ {
+     /*asagidan 8rem bosluk alacak.*/
+     margin-bottom: 8rem;
+     height: 3rem;
+ }
+
+ /*skor isimli class'in bicimlendirilmesi*/
+ .skor
+ {
+     margin-bottom: 2rem;
+ }
